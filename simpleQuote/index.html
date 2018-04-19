@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quote rotator jQuery Demo</title>
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/rotator/jQuery-Quote-Rotator-with-A-Slim-Progress-Indicator-simpleQuote.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 style="margin-top:150px" align="center">Quote rotator jQuery Demo</h1>
+<div class="main">
+<div id="cbp-qtrotator" class="cbp-qtrotator">
+<div class="cbp-qtcontent current"> <img src="1.jpg" alt="img01" />
+<blockquote>
+<p>People eat meat and think they will become as strong as an ox, forgetting that the ox eats grass.</p>
+<footer>Pino Caruso</footer>
+</blockquote>
+</div>
+<div class="cbp-qtcontent"> <img src="2.jpg" alt="img02" />
+<blockquote>
+<p>Nothing will benefit human health and increase the chances for survival of life on Earth as much as the evolution to a vegetarian diet.</p>
+<footer>Albert Einstein</footer>
+</blockquote>
+</div>
+<div class="cbp-qtcontent"> <img src="3.jpg" alt="img03" />
+<blockquote>
+<p>If you don't want to be beaten, imprisoned, mutilated, killed or tortured then you shouldn't condone such behaviour towards anyone, be they human or not.</p>
+<footer>Moby</footer>
+</blockquote>
+</div>
+<div class="cbp-qtcontent"> <img src="4.jpg" alt="img04" />
+<blockquote>
+<p>My body will not be a tomb for other creatures.</p>
+<footer>Leonardo Da Vinci</footer>
+</blockquote>
+</div>
+<span class="cbp-qtprogress"></span> </div>
+</div>
+<!-- / main --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script type="text/javascript">
+		$(document).ready(function() {
+			//Quotes rotator
+			var divs = $('.cbp-qtcontent');
+			
+			function fade() {
+				var current = $('.current');
+				var currentIndex = divs.index(current),
+					nextIndex = currentIndex + 1;
+				
+				if (nextIndex >= divs.length) {
+					nextIndex = 0;
+				}
+				
+				var next = divs.eq(nextIndex);
+				
+				next.stop().fadeIn(1500, function() {
+					$(this).addClass('current');
+				});
+				
+				current.stop().fadeOut(1500, function() {
+					$(this).removeClass('current');
+					_startProgress()
+					setTimeout(fade, 8000);
+				});
+			}
+			
+			function _startProgress(){
+				$(".cbp-qtprogress").removeAttr('style');
+				$(".cbp-qtprogress").animate({
+					width:"800px",
+				} , 8000);
+			}
+			
+			_startProgress()
+			setTimeout(fade, 8000);
+		});
+	</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

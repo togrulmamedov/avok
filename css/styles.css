@@ -36,6 +36,13 @@
     height: 400px;
 }
 
+@media only screen and (max-width: 576px){
+    .carousel-inner,
+    .carousel-item{
+        height: 200px;
+    }
+}
+
 .avok-header{
     border-bottom: 1px solid #e3f2fd;
     padding-top: 10px;
@@ -96,4 +103,26 @@ ul.sub-menu > li {
 
 .card-img-overlay{
     max-height: 300px;
+}
+
+.avok-social{
+    color: #bbdefb;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.avok-nav-text {
+    overflow: hidden;
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.avok-sections {
+    padding: 2px;
+}
+
+@media only screen and (max-width: 576px){
+    .avok-news {
+        margin-bottom: 250px;
+    }
 }

@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Avok</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap styles -->
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.min.css">
 
     <!-- AVOK styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.min.css">
     <!--<link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/fontawesome-free-5.0.9/svg-with-js/css/fa-svg-with-js.css">-->
     <!--<script src="css/fontawesome-free-5.0.9/svg-with-js/js/fontawesome.js"></script>-->
@@ -21,8 +40,15 @@
         <div class="container">
             <!-- Language switcher -->
             <div class="row">
-                <div class="col-12 col-sm-12">
-                    <div class="btn-group align-content-center" role="group" aria-label="language switcher">
+                <div class="col-8 col-sm-11 d-flex justify-content-start justify-content-sm-end">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x avok-social"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-2x avok-social"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x avok-social"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-square fa-2x avok-social"></i></a>
+                    <a href="#"><i class="fas fa-envelope-square fa-2x avok-social"></i></a>
+                </div>
+                <div class="col-4 col-sm-1">
+                    <div class="btn-group float-right" role="group" aria-label="language switcher">
                         <button type="button" class="btn btn-secondary btn-lang">TR</button>
                         <button type="button" class="btn btn-secondary btn-lang">EN</button>
                     </div>
@@ -48,62 +74,71 @@
                                 <ul id="menu-content" class="menu-content collapse out">
                                     <li>
                                         <a href="#">
-                                            Dashboard
+                                            Homepage
                                         </a>
                                     </li>
 
                                     <li  data-toggle="collapse" data-target="#products" class="collapsed"> <!-- class="collapsed active" -->
-                                        <a href="#"> UI Elements
+                                        <a href="#"> About us
                                             <!--<span class="fas fa-angle-down fa-md fa-align-right"></span>-->
                                         </a>
                                     </li>
                                     <ul class="sub-menu collapse" id="products">
-                                        <li class="active"><a href="#">CSS3 Animation</a></li>
-                                        <li><a href="#">General</a></li>
-                                        <li><a href="#">Buttons</a></li>
-                                        <li><a href="#">Tabs & Accordions</a></li>
-                                        <li><a href="#">Typography</a></li>
-                                        <li><a href="#">FontAwesome</a></li>
-                                        <li><a href="#">Slider</a></li>
-                                        <li><a href="#">Panels</a></li>
-                                        <li><a href="#">Widgets</a></li>
-                                        <li><a href="#">Bootstrap Model</a></li>
+                                        <li class="active"><a href="#">Chairmans Message</a></li>
+                                        <li><a href="#">Policy of Quality</a></li>
+                                        <li><a href="#">Our Mission</a></li>
+                                        <li><a href="#">Engineering Departments</a></li>
+                                        <li><a href="#">Partners - Management</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">International Cooperations</a></li>
+                                        <li><a href="#">Affiliates</a></li>
+                                        <li><a href="#">Membership</a></li>
                                     </ul>
 
 
                                     <li data-toggle="collapse" data-target="#service" class="collapsed">
-                                        <a href="#"> Services
+                                        <a href="#"> Sectors
                                             <!--<span class="arrow"></span>-->
                                         </a>
                                     </li>
                                     <ul class="sub-menu collapse" id="service">
-                                        <li>New Service 1</li>
-                                        <li>New Service 2</li>
-                                        <li>New Service 3</li>
+                                        <li>Buildings</li>
+                                        <li>Environment & Water</li>
+                                        <li>Industry</li>
+                                        <li>Petroleum & Gas & Energy</li>
+                                        <li>Transportation</li>
+                                        <li>Urban Development</li>
+                                        <li>Marine Structures</li>
                                     </ul>
 
 
-                                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                                        <a href="#"> New
+                                    <li>
+                                        <a href="#"> Scopre of Services
                                             <!--<span class="arrow"></span>-->
                                         </a>
                                     </li>
-                                    <ul class="sub-menu collapse" id="new">
-                                        <li>New New 1</li>
-                                        <li>New New 2</li>
-                                        <li>New New 3</li>
-                                    </ul>
-
 
                                     <li>
                                         <a href="#">
-                                            Profile
+                                            Projects
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#">
-                                            Users
+                                            Human Resources
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            Locations
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            Contact
                                         </a>
                                     </li>
                                 </ul>
@@ -115,8 +150,8 @@
                     <div class="row">
                         <div class="col-12 col-sm-12">
                             <nav class="navbar navbar-light avok-navbar">
-                                <a class="navbar-brand">Navbar</a>
-                                <form class="form-inline">
+                                <a class="navbar-brand avok-nav-text">AVOK - TURKISH ENGINEERING CONSULTING</a>
+                                <form class="form-inline d-flex justify-content-center">
                                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                                 </form>
@@ -178,26 +213,26 @@
                     <div class="space"></div>
                     <!-- Sectors section -->
                     <div class="row align-content-center">
-                        <div class="col-12">
-                            <figure class="figure">
+                        <div class="col-12 d-flex flex-wrap justify-content-center">
+                            <figure class="figure avok-sections">
                                 <a href="#">
                                     <img src="img/sec1.jpg" class="figure-img img-fluid rounded avok-img" alt="sector1">
                                 </a>
                                 <figcaption class="figure-caption text-center">Sector 1</figcaption>
                             </figure>
-                            <figure class="figure">
+                            <figure class="figure avok-sections">
                                 <a href="#">
                                     <img src="img/sec2.jpg" class="figure-img img-fluid rounded avok-img" alt="sector2">
                                 </a>
                                 <figcaption class="figure-caption text-center">Sector 2</figcaption>
                             </figure>
-                            <figure class="figure">
+                            <figure class="figure avok-sections">
                                 <a href="#">
                                     <img src="img/sec3.jpg" class="figure-img img-fluid rounded avok-img" alt="sector3">
                                 </a>
                                 <figcaption class="figure-caption text-center">Sector 3</figcaption>
                             </figure>
-                            <figure class="figure">
+                            <figure class="figure avok-sections">
                                 <a href="#">
                                     <img src="img/sec4.jpg" class="figure-img img-fluid rounded avok-img" alt="sector4">
                                 </a>
@@ -217,7 +252,7 @@
                     <!-- News section -->
                     <div class="row">
                         <!-- News ticker -->
-                        <div class="col-12 col-sm-12">
+                        <div class="col-12 col-sm-12 avok-news">
                             <div class="main">
                                 <div id="cbp-qtrotator" class="cbp-qtrotator">
                                     <div class="cbp-qtcontent current">

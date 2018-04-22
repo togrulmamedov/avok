@@ -43,6 +43,13 @@
     }
 }
 
+@media only screen and (max-width: 768px){
+    .carousel-inner,
+    .carousel-item{
+        height: 200px;
+    }
+}
+
 .avok-header{
     border-bottom: 1px solid #e3f2fd;
     padding-top: 10px;
@@ -122,6 +129,12 @@ ul.sub-menu > li {
 }
 
 @media only screen and (max-width: 576px){
+    .avok-news {
+        margin-bottom: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px){
     .avok-news {
         margin-bottom: 250px;
     }

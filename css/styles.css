@@ -92,6 +92,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 20px;
 }
 
 ul.sub-menu > li {
@@ -122,6 +123,7 @@ ul.sub-menu > li {
     overflow: hidden;
     white-space: pre-wrap;
     text-align: center;
+    font-weight: bold;
 }
 
 .avok-sections {

@@ -1,0 +1,53 @@
+.html{
+    height: 100%;
+}
+
+.body{
+    min-height: 100%;
+}
+
+.avok-logo{
+    width: 300px;
+    height: 100px;
+}
+
+.avok-logo--row{
+    padding-top: 30px;
+}
+
+.avok-form--row{
+    padding-top: 30px;
+}
+
+.avok-btn--login{
+    color: #01203b;
+    background-color: transparent;
+    background-image: none;
+    border-color: #01203b;
+    width: 40%;
+}
+
+.avok-btn--login:hover{
+    color: #e3f2fd;
+    border-color: #01203b;
+    background-color: #01203b;
+}
+
+.avok-form--width{
+    width: 40%;
+}
+
+@media only screen and (max-width: 576px){
+    .avok-form--width,
+    .avok-btn--login{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .avok-form--width,
+    .avok-btn--login{
+        width: 100%;
+    }
+}
+

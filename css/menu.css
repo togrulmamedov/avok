@@ -86,10 +86,25 @@
     vertical-align: middle;
 }
 .nav-side-menu li {
-    padding-left: 0px;
+    padding-left: 2px;
     /*border-left: 3px solid #2e353d;*/
     border-bottom: 1px solid #bbdefb;
+    font-family: sans-serif;
+    font-size: 15px;
 }
+
+@media only screen and (max-width: 576px){
+    .nav-side-menu li{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .nav-side-menu li{
+        text-align: center;
+    }
+}
+
 .nav-side-menu li a {
     text-decoration: none;
     color: #0d47a1;

@@ -179,3 +179,12 @@ ul.sub-menu > li {
     border-color: #d4a74a;
     background-color: #d4a74a;
 }
+
+.avok-card{
+    border: 1px solid #e3f2fd;
+}
+
+.avok-card--footer{
+    background-color: transparent;
+    border-top: 1px solid #e3f2fd;
+}
